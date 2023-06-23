@@ -1,4 +1,4 @@
-/* Base reset */
+    /* Base reset */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -14,26 +14,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* poppins-regular - latin */
+    /* poppins-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
-  /* raleway-regular - latin */
+    /* raleway-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap; 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* raleway-700 - latin */
+
+    /* raleway-700 - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap; 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -59,3 +60,41 @@ h1 {
 h2 {
   font-size: 4.2rem;
 }
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+    /* Navigation */
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: #be3144;
+    z-index: 10;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+
+  .nav-list a:hover {
+    background: #45567d;
+  }
