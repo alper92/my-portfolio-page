@@ -3,104 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
     <title>my-website</title>
   </head>
   <body>
-    <header>
-      <h1>alper92</h1>
-      <nav>
-        <ul>
+    <header> 
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#welcome">About</a></li>
         </ul>
       </nav>
     </header>
-    <section id="fig-and-tags">
-      <h2>Tags:</h2>
-      <figure>
-        <img src="img/me.jpg" alt="That is how i look like..." />
-<<<<<<< HEAD
-        <figcaption>Me relaxing in Niendorf near Hamburg.</figcaption>
-=======
-        <figcaption>Me relaxing in Niendorf, Hamburg.</figcaption>
->>>>>>> refs/remotes/origin/main
-      </figure>
-      <div id="tags">
-        <h2>Interests</h2>
-        <ul>
-          <li>Travelling</li>
-          <li>Food</li>
-          <li>New Cultures</li>
-          <li>Good Music</li>
-        </ul>
+    <section id="welcome" class="welcome-section">
+      <h1>Hey I am Alper</h1>
+      <img src="img/me.jpg" alt="Thats is how i look like..." class="image-me">
+      <p>a web developer who loves</p>
+      <ul class="interests">
+        <li>travelling</li>
+        <li>food</li>
+        <li>new cultures</li>
+        <li>good music</li>
+      </ul>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects...</h2>
+      <div class="projects-grid">
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 1
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 2
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 3
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 4
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 5
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="img/filler_pic.jpeg" alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 6
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+      <a href="#" class="btn btn-show-all" target="_blank">
+        Show all
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>Do you like coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="https://github.com/alper92" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="alper92@mail.de" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+        <a href="tel:01757777777" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
       </div>
     </section>
-    <section id="contact">
-      <h2>Contact:</h2>
+    <footer>   
       <p>
-        Number:
-        <span>
-          <a href="tel:01753487777777">0175 7777777</a>
-        </span>
+        This is the start of my future portfolio...
       </p>
       <p>
-        E-Mail:
-        <span>
-          <a href="mailto:alperkuertuel@mail.de">alperkuertuel@mail.de</a>
-        </span>
+        Imprint
       </p>
-    </section>
-    <section id="links">
-      <h2>Links:</h2>
-      <figure id="github">
-<<<<<<< HEAD
-        <a href="https://www.github.com/alper92" rel="noreferer" target="_blank">
-          <img src="img/github.svg" alt="github" />
-        </a>
-        <figcaption>GitHub</figcaption>
-      </figure>
-      <figure id="codepen">
-        <a href="https://www.codepen.io" rel="noreferer" target="_blank">
-          <img src="img/codepen.svg" alt="codepen" />
-        </a>
-        <figcaption>Codepen</figcaption>
-      </figure>
-      <figure id="linkedin">
-        <a href="https://www.linkedin.com/alper-kuertuel" rel="noreferer" target="_blank"><img src="img/linkedin.svg" alt="linkedin"/></a>
-=======
-        <a href="https://www.github.com/alper92" rel="noreferer" target="_blank"
-          ><img src="img/github.svg" alt="github"
-        /></a>
-        <figcaption>GitHub</figcaption>
-      </figure>
-      <figure id="codepen">
-        <a href="https://www.codepen.io" rel="noreferer" target="_blank"
-          ><img src="img/codepen.svg" alt="codepen"
-        /></a>
-        <figcaption>Codepen</figcaption>
-      </figure>
-      <figure id="linkedin">
-        <a
-          href="https://www.linkedin.com/alper-kuertuel"
-          rel="noreferer"
-          target="_blank"
-          ><img src="img/linkedin.svg" alt="linkedin"
-        /></a>
->>>>>>> refs/remotes/origin/main
-        <figcaption>LinkedIn</figcaption>
-      </figure>
-    </section>
-    <section id="about">
-      <h2>About me:</h2>
       <p>
-        I'm a humble and cool guy living in the middle of nowhere. It doesn't
-        matter where we come from, what we did but it matters where we want to
-        be in future.
+        Privacy Policy
       </p>
-    </section>
-    <footer>
-      <sup>created by alper92</sup>
     </footer>
   </body>
 </html>
