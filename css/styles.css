@@ -103,6 +103,7 @@ ul {
 .welcome-section {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -117,4 +118,31 @@ ul {
     font-weight: 200;
     font-style: italic;
     color: #be3144;
+  }
+
+  .image-me {
+    width: 20%;
+    border-radius: 50%;
+    border: .2rem solid rgb(75, 75, 75);
+  }
+
+.interests {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+
+  .interests li {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .interests li::before {
+    content: "#";
+    margin-right: .3rem;
   }
