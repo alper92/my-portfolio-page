@@ -1,3 +1,11 @@
+  /* Variables */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+    
     /* Base reset */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -6,15 +14,15 @@
 }
 
 html {
-    /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-     */
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+   */
   font-size: 62.5%; 
   scroll-behavior: smooth;
 }
 
-/* 1200px / 16px = 75em */
+  /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
     font-size: 60%;
@@ -66,8 +74,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   line-height: 1.4;
-  color: white;
-  background-color: grey; /* Only for now! */
+  color: var(--main-white);
 }
 
 h1,
@@ -92,7 +99,7 @@ ul {
   
 a {
   text-decoration: none;
-  color: white;
+  color: var(--main-white);
 }
 
 img {
@@ -109,7 +116,7 @@ img {
   left: 0;
   width: 100%;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  background-color: #be3144;
+  background-color: var(--main-red);
   z-index: 10;
 }
 
@@ -123,10 +130,22 @@ img {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+  transition: ease-in .2s;
 }
 
 .nav-list a:hover {
-  background: #45567d;
+  background: var(--main-blue);
+}
+
+  /* 28.75 x 16px = 460px | Underneath 460px .nav will be centered */
+@media (max-width: 28.75rem) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
 }
 
    /* Welcome-Section */
@@ -140,14 +159,14 @@ img {
   height: 100vh; /* vh represents the viewport-percentage length unit based on the browser default viewport size */
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  color: white; /* Just for now...*/
 }
 
+  /* Child combinator = p-elements which are children from the .welcom-section-class */
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
-  color: #be3144;
+  color: var(--main-red);
 }
 
 .image-me {
@@ -167,7 +186,7 @@ img {
 
 .interests li {
   background-color: rgb(75, 75, 75);
-  color: white;
+  color: var(--main-white);
   padding: .4rem 1rem;
   border-radius: 1rem;
 }
@@ -181,7 +200,7 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background-color: #45567d;
+  background-color: var(--main-blue);
 }
   
 .projects-section-header {
@@ -189,6 +208,7 @@ img {
   margin: 0rem auto 6rem auto;
 }
 
+/* 28.75em x 16px = 460px */
 @media (max-width: 28.75em) {
   .projects-section-header {
     font-size: 4rem;
@@ -217,7 +237,7 @@ img {
 }
 
 .project {
-  background: #303841;
+  background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
@@ -250,12 +270,12 @@ img {
     
 .btn-show-all {
   font-size: 2rem;
-  background: #303841;
-  transition: background 0.3s ease-out;
+  background: var(--main-gray);
+  transition: 0.3s ease-out;
 }
     
 .btn-show-all:hover {
-  background: #be3144;
+  background: var(--main-red);
 }
     
 .btn-show-all:hover > i {
@@ -278,7 +298,7 @@ img {
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: #303841;
+  background: var(--main-gray);
 }
     
 .contact-section-header > h2 {
@@ -316,7 +336,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: #303841;
-  border-top: 4px solid #be3144;
+  border-top: 4px solid var(--main-red);
 }
       
 footer > p {
