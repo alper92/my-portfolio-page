@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-  /* I use the following media-queries as styling points */
+  /* I use the following max-widths as styling points for media query */
   /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -30,14 +30,14 @@ html {
   }
 }
 
-/* 980px / 16px = 61.25em */
+  /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
     font-size: 58%;
   }
 }
 
-/* 460px / 16px = 28.75em */
+  /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
@@ -150,7 +150,7 @@ img {
   }
 }
 
-   /* Welcome-Section */
+  /* Welcome-Section */
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -212,6 +212,25 @@ img {
   margin-right: .3rem;
 }
 
+/* wiggle keyframes for shaking the interests tags */
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+      80% { transform: rotate(0deg); }
+      85% { transform: rotate(4deg); }
+      95% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+  }
+
+.wiggle {
+  animation: wiggle 1s infinite;
+}
+
+/* This stops the animation when hovering the interests */
+.wiggle:hover {
+  animation: none;
+}
+
   /* Projects-Section */
 .projects-section {
   text-align: center;
@@ -271,13 +290,14 @@ img {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  opacity: .5;
 }
     
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
 }
-    
+  /* Show All Projects Button */
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -295,12 +315,12 @@ img {
 }
     
 .btn-show-all:hover > i {
-  transform: translateX(2px);
+  transform: translateX(2px); /* Moves childern of i 2 px to the right after hovering */
 }
     
 .btn-show-all > i {
   margin-left: 10px;
-  transform: translateX(0);
+  transform: translateX(0); /* Reference point of upper hover effect */
   transition: transform 0.3s ease-out;
 }
 
