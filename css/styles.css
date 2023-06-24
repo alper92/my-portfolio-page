@@ -22,6 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
+  /* I use the following media-queries as styling points */
   /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -73,6 +74,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
 }
@@ -173,6 +175,20 @@ img {
   width: 20%;
   border-radius: 50%;
   border: .2rem solid rgb(75, 75, 75);
+}
+
+  /* 61.25 x 16px = 980px */
+@media (max-width: 61.25em) {
+  .image-me {
+    width: 30%;
+  }
+}
+
+  /* 28.75 x 16px = 460px */ 
+@media (max-width: 28.75rem) {
+  .image-me {
+    width: 50%;
+  }
 }
 
 .interests {
