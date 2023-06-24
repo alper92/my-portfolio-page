@@ -1,8 +1,9 @@
   /* Variables */
   /* Here I plan to use the variables to create a button which changes the color-set of the site */
-:root {
+  /* Variablenames are not correct named yet and suiting only to the commented colors */
+  :root {
   --main-white: #f0f0f0;
-  --main-red: hsl(190, 45%, 55%); /* #be3144; */
+  --main-red: hsl(190, 60%, 40%); /* #be3144; */
   --main-blue: #2B2E63; /* #45567d; */
   --main-gray: #446074; /* #303841; */
 }
