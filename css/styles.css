@@ -2,9 +2,9 @@
   /* Here I plan to use the variables to create a button which changes the color-set of the site */
 :root {
   --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --main-red: hsl(190, 45%, 55%); /* #be3144; */
+  --main-blue: #2B2E63; /* #45567d; */
+  --main-gray: #446074; /* #303841; */
 }
     
     /* Base reset */
@@ -279,7 +279,7 @@ img {
 }
  
 .code {
-  color: #303841;
+  color:  var(--main-gray);
   transition: color 0.3s ease-out;
 }
     
