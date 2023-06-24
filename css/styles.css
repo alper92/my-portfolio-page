@@ -44,6 +44,8 @@ html {
   body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
+    color: white;
+    background-color: grey; /* Only for now! */
 }
 
 h1,
@@ -59,6 +61,7 @@ h1 {
 
 h2 {
   font-size: 4.2rem;
+  margin-top: 4rem;
 }
 
 ul {
@@ -99,7 +102,7 @@ ul {
     background: #45567d;
   }
 
-    /* Welcome Section */
+    /* Welcome-Section */
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -146,3 +149,43 @@ ul {
     content: "#";
     margin-right: .3rem;
   }
+    /* Contact-Section */
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 80vh;
+      padding: 0 2rem;
+      background: #303841;
+    }
+    
+    .contact-section-header > h2 {
+      font-size: 6rem;
+    }
+    
+    .contact-section-header > p {
+      font-style: italic;
+    }
+    
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      max-width: 98rem;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
+    
+    .contact-details {
+      font-size: 2.4rem;
+      text-shadow: 2px 2px 1px #1f1f1f;
+      transition: transform 0.3s ease-out;
+    }
+    
+    .contact-details:hover {
+      transform: translateY(.8rem);
+    }
